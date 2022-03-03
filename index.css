@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: "Harry";
-    src: url("../HARRYP__.TTF");
+    src: url("./HARRYP__.TTF");
 }
 
 .titulo {
     color: darkgoldenrod;
-    font-family: 'Harry';
+    font-family: "Harry";
     font-size: 100px;
   }
 
