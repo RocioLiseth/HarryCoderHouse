@@ -1,6 +1,6 @@
 * {
-    margin: 5px;
-    padding:5px;
+    margin:0;
+    padding:0;
 }
 
 
@@ -49,9 +49,8 @@ body {
 
     grid-template-areas: 
     "nav nav"
-    "Inicio table"
+    "Inicio Inicio"
     "footer footer";
-    justify-items: center;
 }
 
 nav{
@@ -60,6 +59,8 @@ nav{
 
 #Inicio{
     grid-area: Inicio;
+    text-align: center
+    
 }
 
 table{
@@ -69,4 +70,8 @@ table{
 
 footer{
     grid-area: footer;
+}
+
+#always {
+    text-align: center
 }

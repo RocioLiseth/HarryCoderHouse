@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,83 +13,103 @@
   <div id="contenedor"><body>
   
     <nav>
-      <figure><img src="./Always.png" width="150" height="80" ></figure>
+      <figure id="always" ><img src="./Always.png" width="150" height="80" ></figure>
       
-      <div class="btn-group-horizontal">
-        <button type="button" class="btn"><a href="#Inicio">Home</a></button>
-        <button type="button" class="btn"><a href="./Libros.html">Libros</a></button>
-        <button type="button" class="btn"><a href="./Películas.html">Películas</a></button>
-        <button type="button" class="btn"><a href="./Personajes.html">Personajes</a></button>
-        <button type="button" class="btn"><a href="./Contacto.html">Contacto</a></button>
-      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#Inicio">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="./Libros.html">Libros</a>
+              <a class="nav-link" href="./Películas.html">Películas</a>
+              <a class="nav-link" href="./Personajes.html">Personajes</a>
+              <a class="nav-link" href="./Contacto.html">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </nav>
 
     <header id="Inicio">
-      <figure><img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Harry_Potter_wordmark.svg" width="300" height="250" alt="logo" /> <img src="https://c.tenor.com/CFTMtlT6uTIAAAAd/harry-potter.gif" width="300" height="250" alt="logo" /></figure>
       <h1 class="titulo">Hogwarts</h1>
+
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://cinematicos.net/wp-content/uploads/La-escena-de-Harry-Potter-Emma-Watson-estaba-demasiado-avergonzada.jpg"  alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://static4.abc.es/Media/201402/03/hermione-harry-ron--644x362.jpg"  weight="780px" height="430px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://estaticos-cdn.elperiodico.com/clip/93d7bdb4-a413-4d2e-ae89-8d134d40811a_alta-libre-aspect-ratio_default_0.jpg" weight="780px" height="430px" alt="...">
+          </div>
+        </div>
+      </div>
+
+
       <h2 >Conocé las diferentes casas</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Gryffindor
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              La Casa Gryffindor fue fundada por el célebre mago Godric Gryffindor. Godric sólo aceptaba en su casa a aquellos magos y brujas que tenían valentía, disposición, coraje y caballerosidad, ya que éstas son las cualidades de un auténtico Gryffindor. Los colores de esta casa son el dorado y el escarlata y su símbolo es un león. La reliquia más preciada de la casa es la espada de Godric Gryffindor, perteneciente, como su nombre indica, al fundador de la casa. Los estudiantes de esta casa pasan la mayor parte del tiempo en la Torre de Gryffindor, ubicada en el séptimo piso del Castillo de Hogwarts.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Slytherin
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              La Casa Slytherin está caracterizada principalmente por la ambición y la astucia. Fue fundada por el mago Salazar Slytherin. La Sala Común está situada en las mazmorras, pasando por un serie de numerosos pasillos subterráneos. Posiblemente se llega a ellos a través del Vestíbulo de Hogwarts . Específicamente se encuentra debajo del Lago Negro, haciendo que la sala común sea fría y con una tonalidad verdosa, ya que hay ventanas que dan a las aguas. Se accede a ella por una puerta altamente disimulada en un muro de piedra, diciendo una contraseña requerida. La única conocida es "Sangre Pura". Su principal reliquia es el guardapelo de Salazar Slytherin. El animal representativo es la serpiente, sus colores son verde y plateado y el elemento es el agua, asociada con la astucia y la frialdad.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Hufflepuff
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             La Sala Común de Hufflepuff se encuentra en una bodega en el mismo pasillo subterráneo que la cocina. Inicialmente, Hufflepuff buscaba alumnos que simplemente quisieran pertenecer a esa casa, aunque actualmente busca alumnos leales, honestos y que no teman el trabajo pesado. La fundadora es nada menos que la bruja Helga Hufflepuff, amiga desde la infancia de Rowena Ravenclaw. Helga fue una bruja muy noble, amigable y la principal impulsora de que Hogwarts aceptase a alumnos nacidos de muggles. La principal reliquia de la casa es la copa de Helga Hufflepuff. El símbolo de la casa es un tejón negro y sus colores representativos son el amarillo y el negro carbón.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Ravenclaw
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              La Casa Ravenclaw se encuentra en una torre en el ala oeste del castillo. En la entrada se encuentra una estatua con forma de águila hace dice acertijos y sólo te deja entrar si lo resuelves. Sus colores son el azul y el bronce. Ravenclaw busca alumnos creativos, curiosos y que siempre busquen la respuesta. Fue fundada por la bruja, nacida en las cañadas de Escocia, Rowena Ravenclaw. Supuestamente es la principal inventora del nombre, lugar y formato de Hogwarts. También es la causante de que las escaleras se muevan. Su principal reliquia es la diadema de Rowena Ravenclaw. El símbolo de la casa es el águila, aunque en alguna versión del escudo es un cuervo.
+            </div>
+          </div>
+        </div>
+      </div>
+
     </header>
 
-    <table>
-      <tr>
-          <th>Casa</th>
-          <th>Fundador</th>
-          <th>Cualidades</th>
-          <th>Emblema</th>
-      </tr>
-      <tr id="titgryff">
-          <td>Gryffindor</td>
-          <td>Godric Gryffindor</td>
-          <td>
-              <ol>
-                  <li>Valor</li>
-                  <li>Fuerza</li>   
-                  <li>Audacia</li>   
-                
-              </ol>
-          </td>
-          <td><figure><img src="https://media.mykaramelli.com/galeria/articulos/decoracion-de-pared-emblema-gryffindor-harry-potter-61cm_12422_1.jpg" width="150" height="150" alt="logo" /></figure></td>
-      </tr>
-      <tr id="titsly">
-          <td>Slytherin</td>
-          <td>Salazar Slytherin</td>
-          <td><ol>
-              <li>Ambición</li>
-              <li>Determinación</li>
-              <li>Astucia</li>
-          </ol></td>
-        </td>
-        <td><figure><img src="https://media.mykaramelli.com/galeria/articulos/decoracion-de-pared-emblema-slytherin-harry-potter-61cm_12421_1.jpg" width="150" height="150" alt="logo" /></figure></td>
-      </tr>
 
-      <tr id="tithuff">
-        <td>Hufflepuff</td>
-        <td>Helga Hufflepuff</td>
-        <td>
-            <ol>
-                <li>Justicia</li>
-                <li>Lealtad</li>   
-                <li>Paciencia</li>   
-              
-            </ol>
-        </td>
-        <td><figure><img src="https://media.mykaramelli.com/galeria/articulos/decoracion-de-pared-emblema-hufflepuff-harry-potter-61cm_12419_1.jpg" width="150" height="150" alt="logo" /></figure></td>
-    </tr>
 
-    <tr id="titrav">
-      <td>Ravenclaw</td>
-      <td>Rowena Ravenclaw</td>
-      <td>
-          <ol>
-              <li>Creatividad</li>
-              <li>Erudición</li>   
-              <li>Inteligencia</li>   
-            
-          </ol>
-      </td>
-      <td><figure><img src="https://m.media-amazon.com/images/I/71IgpxIE-cL._AC_SX466_.jpg" width="120" height="120" alt="logo" /></figure></td>
-  </tr>
-  </table>
+
+
+    
     <br />
     <br />
     <footer>
