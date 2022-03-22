@@ -7,6 +7,10 @@
   font-family: "Harry";
   src: url("./HARRYP__.TTF");
 }
+header {
+  grid-area: Inicio;
+  text-align: center;
+}
 header h1 {
   color: darkgoldenrod;
   font-family: "Harry";
@@ -53,11 +57,6 @@ body {
 
 nav {
   grid-area: nav;
-}
-
-#Inicio {
-  grid-area: Inicio;
-  text-align: center;
 }
 
 footer {

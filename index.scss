@@ -11,6 +11,9 @@
 
 
 header {
+    grid-area: Inicio;
+    text-align: center;
+    
     h1 {
         color: darkgoldenrod;
         font-family: "Harry";
@@ -57,7 +60,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 8fr 1fr;
-
     grid-template-areas: 
     "nav nav"
     "Inicio Inicio"
@@ -69,12 +71,6 @@ nav{
 
 }
 
-
-#Inicio{
-    grid-area: Inicio;
-    text-align: center
-    
-}
 
 footer{
     grid-area: footer;
