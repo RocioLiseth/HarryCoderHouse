@@ -19,12 +19,19 @@ header {
         font-family: "Harry";
         font-size: 100px;
         &:hover{
-            color: black;
+            color: firebrick;
         }
     }
 
     h2 {
-      font-size: 60px; 
+      font-size: 20px; 
+    }
+
+    P{
+        font-size: medium;
+        font-style: normal;
+        color: white;
+
     }
 }
 
@@ -52,7 +59,7 @@ font-size:20px;
 }
 
 body {
-    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dfd7dd72-34a6-4309-b1b1-2e271aac2d1e/d6l2g69-dfbec369-91aa-4506-a4b2-4d5ecde73309.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RmZDdkZDcyLTM0YTYtNDMwOS1iMWIxLTJlMjcxYWFjMmQxZVwvZDZsMmc2OS1kZmJlYzM2OS05MWFhLTQ1MDYtYTRiMi00ZDVlY2RlNzMzMDkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.hxaHP57GLBGqV7VPIpp27FIHecr2mjcu16QXII8dCcA");
+    background-color: rgb(39, 38, 38)
     
 }
     
