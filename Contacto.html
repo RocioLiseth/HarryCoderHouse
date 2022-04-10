@@ -1,45 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="description"
+    content="Newsletter de Harry Potter">
+    <meta name="keywords"
+    content="Newsletter Harry Potter, Muggle">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/index.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
 <body>
-    <header>CONTACTO</header>
-        <p>¿Querés suscribirte a nuestro neewsletter? ¡Escribinos!</p>
-        <br>
-        <form action="" method="GET">
-            <label for="Nombre">Nombre:</label>
-            <input id="Nombre" type="text"> 
-            <br>
-            <label for="Apellido">Apellido</label>
-            <input id="Apellido" type="text"> 
-            <br>
-            <label for="Mail">E-mail</label>
-            <input id="Mail" type="text"> 
-            <br>
-            <div>¿Sos un Muggle?</div>
-            <input type="radio" name="Muggle" value="Si" />Si
-            <input type="radio" name="Muggle" value="No" />No
+    <nav>
+        <nav class="navbar navbar-expand-lg navbar-light" bg-dark style="background-color:darkgoldenrod">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" href="./Libros.html">Libros</a>
+                <a class="nav-link" href="./Películas.html">Películas</a>
+                <a class="nav-link" href="./Hogwarts.html">Hogwarts</a>
+                <a class="nav-link" href="./Contacto.html">Contacto</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </nav>
+    <header><h1>CONTACTO</h1></header>
 
-            <div>¿De qué casa sos?</div>
-            <select name="Casa" id="elegir-casa">
-                <option value="Gryffindor">Gryffindor</option>
-                <option value="Slytherin">Slytherin</option>
-                <option value="Hufflepuff">Hufflepuff</option>
-                <option value="Ravenclaw">Ravenclaw</option>
-            </select>
-            <div>Comentanos tu libro favorito</div>
-            <input type="text">
-            <br>
-            <input type="submit">
-            <input type="reset">
-        </form>
-    <br>
-    <br>
-    <a href="./index.html">Volver al Inicio</a>
-    
+
+                <div id="tituloFormulario"><h2>¿Querés suscribirte a nuestro newsletter? ¡Escribinos!</h2></div>
+        <div class="contacto">
+
+            <div class="contacto__elemento">
+                <form action="" method="GET">
+                    <br>
+                    <label for="Nombre">Nombre:</label>
+                    <input id="Nombre" type="text">
+                    <br>
+                    <label for="Apellido">Apellido</label>
+                    <input id="Apellido" type="text">
+                    <br>
+                    <label for="Mail">E-mail</label>
+                    <input id="Mail" type="text">
+                    <br>
+                    <br>
+                    <div>¿Sos un Muggle?</div>
+                    <input type="radio" name="Muggle" value="Si" />Si
+                    <input type="radio" name="Muggle" value="No" />No
+                    <br>
+                    <br>
+                    <div>¿De qué casa sos?</div>
+                    <select name="Casa" id="elegir-casa">
+                        <option value="Griffindor">Griffindor</option>
+                        <option value="Hufflepuff">Hufflepuff</option>
+                        <option value="Ravenclaw">Ravenclaw</option>
+                        <option value="Slytherin">Slytherin</option>
+                    </select>
+                    <br>
+                    <br>
+                    <input type="submit">
+                    <input type="reset">
+                </form>
+            </div>
+
+            <div class="contacto__elemento">
+                    <img src="https://i.pinimg.com/originals/a2/e0/9a/a2e09a1aeac6583fe19a5d2804b6d997.gif"
+                    width="380" height="320">
+                    
+            </div>
+        </div>
+
+<br>
+    <footer>
+        <em>HARRY POTTER</em>
+        <br />
+  
+        <a href="https://www.instagram.com/"><img src="./assets/img/logos/instagram.png" alt="instagram-logo" height="40"
+            width="40" /></a>
+        <a href="https://www.facebook.com/"><img src="./assets/img/logos/facebook.png" alt="facebook-logo" height="40"
+            width="40" /></a>
+        <a href="https://twitter.com/home?lang=es"><img src="./assets/img/logos/twitter.png" alt="twitter-logo"
+            height="40" width="40" /></a>
+        <a href="https://www.youtube.com/"><img src="./assets/img/logos/youtube.png" alt="youtube-logo" height="40"
+            width="40" /></a>
+        <a href="https://www.linkedin.com/in/rocio-bates/"><img src="./assets/img/logos/linkedin.png" alt="linkedin-logo" height="40"
+            width="40" /></a>    
+      </footer>
+
+
 </body>
 </html>

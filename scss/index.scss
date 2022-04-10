@@ -35,6 +35,10 @@ header {
     }
 }
 
+h2 {
+    color: firebrick;
+}
+
 
 th {
 font-weight:bolder;
@@ -59,30 +63,72 @@ font-size:20px;
 }
 
 body {
-    background-color: rgb(39, 38, 38)
+    background-color: rgb(39, 38, 38);
+    text-align: center;
     
 }
     
-#contenedor {
+#contenedorIndex {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas: 
     "nav nav"
     "Inicio Inicio"
     "footer footer";
 }
 
+
 nav{
     grid-area: nav;
 
 }
 
-
-footer{
+footer {
+    color: rgb(0, 0, 0);
+    background-color: darkgoldenrod;
+    bottom: 0%;
+    width: 100%;
     grid-area: footer;
+
 }
+
 
 #always {
     text-align: center
 }
+
+.accordion-item {
+    background-color: rgb(0, 0, 0);
+    color: darkgoldenrod;
+}
+
+.accordion-button {
+    background-image: linear-gradient(to right, black, darkgoldenrod, black);
+    color: azure;
+}
+
+.contacto {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.contacto__elemento {
+    margin: 50px;
+    display: inline-block;
+    background-color: rgb(70, 70, 70);
+    color: darkgoldenrod;
+    width: 320px;
+    height: 320px;
+}
+
+.cotizador__elemento {
+    margin: 50px;
+    display: inline-block;
+    background-color: black;
+    color: #ffffff;
+    width: 400px;
+    height: 390px;
+}
+

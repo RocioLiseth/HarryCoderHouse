@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: "Harry";
+  src: url("./HARRYP__.TTF"); }
+
+header {
+  grid-area: Inicio;
+  text-align: center; }
+  header h1 {
+    color: darkgoldenrod;
+    font-family: "Harry";
+    font-size: 100px; }
+    header h1:hover {
+      color: firebrick; }
+  header h2 {
+    font-size: 20px; }
+  header P {
+    font-size: medium;
+    font-style: normal;
+    color: white; }
+
+h2 {
+  color: firebrick; }
+
+th {
+  font-weight: bolder;
+  font-size: 20px; }
+
+#titgryff {
+  color: firebrick; }
+
+#titsly {
+  color: green; }
+
+#tithuff {
+  color: darkgoldenrod; }
+
+#titrav {
+  color: navy; }
+
+body {
+  background-color: #272626;
+  text-align: center; }
+
+#contenedorIndex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav nav" "Inicio Inicio" "footer footer"; }
+
+nav {
+  grid-area: nav; }
+
+footer {
+  color: black;
+  background-color: darkgoldenrod;
+  bottom: 0%;
+  width: 100%;
+  grid-area: footer; }
+
+#always {
+  text-align: center; }
+
+.accordion-item {
+  background-color: black;
+  color: darkgoldenrod; }
+
+.accordion-button {
+  background-image: linear-gradient(to right, black, darkgoldenrod, black);
+  color: azure; }
+
+.contacto {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center; }
+
+.contacto__elemento {
+  margin: 50px;
+  display: inline-block;
+  background-color: #464646;
+  color: darkgoldenrod;
+  width: 320px;
+  height: 320px; }
+
+.cotizador__elemento {
+  margin: 50px;
+  display: inline-block;
+  background-color: black;
+  color: #ffffff;
+  width: 400px;
+  height: 390px; }
